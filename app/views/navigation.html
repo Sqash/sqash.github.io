@@ -1,0 +1,7 @@
+<nav ng-controller="NavCtrl">
+  <ul>
+    <li ng-repeat="item in menu" ng-class="{active: isActive(item.link)}">
+      <a ng-href="#{{item.link}}">{{item.title}}</a>
+    </li>
+  </ul>
+</nav>
