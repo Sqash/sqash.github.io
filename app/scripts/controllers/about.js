@@ -36,14 +36,50 @@ angular.module('samWhiteleyApp')
     var compSci = {
       title: 'Code & Tech',
       content: [
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis maximus velit. Suspendisse nibh ante, egestas a ipsum placerat, rutrum iaculis enim. Sed nulla velit, eleifend eu volutpat ut, iaculis sit amet sapien. Mauris eu mauris tincidunt velit consequat tincidunt vel volutpat lacus. Donec facilisis libero nec massa auctor, eget blandit diam tempus. Aliquam ante tortor, pretium vel laoreet vitae, pellentesque faucibus justo. Pellentesque consectetur, nisl quis malesuada molestie, lorem augue dignissim elit, eget fringilla leo dolor at arcu. Mauris commodo feugiat hendrerit. Aliquam purus purus, aliquet ac turpis at, egestas ornare erat. Mauris tristique metus bibendum nisi tincidunt, non vehicula augue viverra. Aliquam sollicitudin non quam tempus eleifend. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.',
-        'Sed sed lectus sit amet erat pellentesque tempus. Mauris viverra interdum nulla quis tincidunt. Suspendisse luctus scelerisque cursus. Nullam mollis ante a dolor fermentum, at congue nisi suscipit. Nam porta convallis aliquet. In non risus sit amet augue ultricies maximus id ac arcu. Duis sit amet tempor nunc. Nulla egestas, metus ut congue condimentum, purus sapien finibus massa, et volutpat metus neque in quam. Proin ligula purus, mattis a dolor et, varius vestibulum ex. Quisque tortor nibh, facilisis id neque non, mollis tempor nisi. Donec mattis odio ultrices augue venenatis, id luctus massa feugiat. Nulla facilisi. Maecenas lacinia lacus vitae luctus sagittis. Quisque ex lectus, pharetra vitae vehicula a, convallis eu lectus. Vivamus porttitor, libero eu condimentum tincidunt, nibh sapien euismod nisi, sed tincidunt orci odio vitae sem.',
-        'Praesent convallis venenatis blandit. Donec et iaculis ligula, id iaculis nulla. Integer nec velit lectus. Donec bibendum vehicula urna, egestas tristique mi vehicula non. Quisque interdum pharetra lacus, semper viverra ante suscipit vel. Nulla non risus ante. Quisque condimentum arcu eu ipsum dictum, eu porta magna luctus. Vestibulum ut neque eu quam tincidunt bibendum. Proin at nisi sapien. Mauris viverra, erat rutrum rutrum sagittis, ante nulla iaculis ante, scelerisque fringilla elit eros et mi.',
-        'Morbi sed nibh consectetur, bibendum magna at, lobortis turpis. Fusce sagittis vulputate metus, at facilisis purus interdum porttitor. Vestibulum ut imperdiet libero, non rhoncus lectus. Vestibulum et velit lectus. In sollicitudin at sapien in eleifend. Curabitur mollis mi urna, non blandit orci auctor vel. Nam cursus, nisi at tincidunt tincidunt, quam urna iaculis dui, ut vestibulum neque lectus id lacus. Donec bibendum, nisl et pulvinar fringilla, ipsum dolor rhoncus mauris, vel tincidunt massa mauris eget elit. Nunc egestas nunc ut mauris maximus, at elementum ex porttitor. Pellentesque ullamcorper neque lorem, a accumsan ex ultricies in. Aenean at ullamcorper metus. Quisque eget tristique ligula. Etiam tempor massa vehicula consequat fringilla. Donec convallis ut nunc at ornare. Cras posuere vitae arcu non tincidunt.',
-        'Proin laoreet imperdiet quam laoreet pellentesque. In posuere elementum malesuada. Sed vitae tellus porttitor augue ornare congue. Sed ut purus venenatis, dignissim nunc eget, consectetur augue. Vivamus sit amet dolor augue. Etiam egestas sapien ut ante aliquet, nec pretium lacus pretium. Proin quis lacus mattis, aliquet augue sit amet, consectetur lorem. Duis vitae ullamcorper nisl.'
+        'I like it all!',
+        'Seriously though, everything from newest of NASA\'s launch tests to ' +
+        'the websites I hack up for friends to the coolest applications of ' +
+        'cloud computing. I\'m a big nerd and I won\'t have it any other way!',
+        'Education wise, I specialize in computer networking and security. ' +
+        'As so far as my education has come, I\'m much better at the first ' +
+        'of those two things.',
+        'My personal interests lie in web-based solutions to world problems ' +
+        '(big and small alike) and also in big data computation. I\'m still ' +
+        'working on my expertise in the second.',
+        'Most of my coding recently has been geared towards providing tools ' +
+        'for people I know who don\'t code. It\'s continuing to be a really ' +
+        'rewarding experience; where I can learn and test new ideas and ' +
+        'tools out and provide something of value at the same time!',
+        'The things I\'m always keeping in mind while at the keyboard? ' +
+        'There\'s (almost) always a better solution; Think first then code; ' +
+        'Don\'t solve something that already has a good answer; (User ' +
+        'experience is key.) || (If it\'s not easy, they won\'t use it.)'
       ]
     };
 
-    $scope.sections = [personal, compSci];
+    var volunteering = {
+      title: 'I volunteer!',
+      content: [
+        'There are lots of things that I do in my spare time for fun and for ' +
+        'organizations I love! Here are some of the highlights.',
+        'Carleton Computer Science Society (CCSS): I\'ve been an Executive ' +
+        'member of the society since the \'14/\'15 school year. First go I ' +
+        'was Secretary for the society and for the \'15/\'16 school year I ' +
+        'am the Academic Representitive. As part of the Executive Board of ' +
+        'the CCSS I help provide services and events to make the University ' +
+        'experience at Carleton exceptional for everyone in Comp. Sci.',
+        'Carleton Game Dev Club: We built an arcade machine! You can come ' +
+        'check it out and likely even play it on Carleton University campus',
+        'Blue Skies Music Festival: I\'m one of a marvelous group of dudes ' +
+        'and ladies that stand in the blazing August sunshine and help you ' +
+        'park your sedan on the side of a mini mountain in a forest. It\'s ' +
+        'a ton of fun and I love it!',
+        'I\'ve also had some fun volunteering stints with Ottawa Bluesfest, ' +
+        'Mister Leather Ottawa, and probably a bunch of tech and labor ' +
+        'endevours that have slipped my mind.'
+      ]
+    };
+
+    $scope.sections = [personal, compSci, volunteering];
 
   });
