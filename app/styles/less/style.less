@@ -10,6 +10,26 @@ body {
   flex-direction: column;
 }
 
+//scrollbars
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: none;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 8px;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 4px;
+  box-shadow: 0 0 2px 2px rgba(0,0,0,0.5) inset;
+}
+
+//styles
+
 #header {
   width: 100%;
   flex: 0 0;
@@ -20,35 +40,22 @@ body {
 }
 
 #nav {
-  //make this a flex
   width: 90%;
   margin: 0 auto;
   border-bottom: 1px solid #ccc;
-  ul {
-    text-align: center;
-    padding: 0;
-    margin: 10px 0;
-  }
-  li {
-    display: inline-block;
-    margin: 0 1%;
-  }
-  a {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
 }
 
 #main-content {
   width: 60%;
   margin: 1.5rem auto 1.5rem auto;
+  padding: 0 1.5rem;
   overflow-y: auto;
   flex: 1;
+  @media screen and (max-width: 1023px) {
+    width: 75%;
+  }
   @media screen and (max-width: 767px) {
     width: 90%;
-  }
-  div:first-child, p:first-child {
   }
 }
 

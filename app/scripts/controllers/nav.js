@@ -2,6 +2,25 @@
 
 angular.module('samWhiteleyApp')
   .controller('NavCtrl', function($scope, $location) {
+
+    $scope.getCurrPage = function() {
+      for(var i=0, l=$scope.menu.length; i<l; i++){
+        if($scope.menu[i].link === $location.path()) {
+          return $scope.menu[i].title;
+        }
+      }
+    }
+
+    $scope.navTo = function(item) {
+      $scope.currPage = item.title;
+      $scope.isCollapsed = true;
+      $location.path(item.link);
+    }
+
+    $scope.isActive = function(route) {
+      return route === $location.path();
+    };
+
     $scope.menu = [
       {
         title: 'Home',
@@ -25,9 +44,7 @@ angular.module('samWhiteleyApp')
       }
     ];
 
-    $scope.collapsed = true;
+    $scope.isCollapsed = true;
+    $scope.currPage = $scope.getCurrPage();
 
-    $scope.isActive = function(route) {
-      return route === $location.path();
-    };
   });
