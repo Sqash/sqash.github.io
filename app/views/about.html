@@ -1,7 +1,10 @@
-<div>
-  <h3>{{title}}</h3>
+<div class="about">
 
-  <div class="content-bubble">
-    <p>{{content}}</p>
+  <div class="section" ng-repeat="s in sections">
+    <h4>{{s.title}}</h4>
+    <div class="content-bubble">
+      <p ng-repeat="par in s.content">{{par}}</p>
+    </div>
   </div>
+
 </div>

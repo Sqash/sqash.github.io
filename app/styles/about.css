@@ -1,0 +1,10 @@
+.about .section h4 {
+  display: block;
+  text-decoration: underline;
+}
+.about .content-bubble {
+  text-align: justify;
+  background: #ddd;
+  border-radius: 2rem;
+  padding: 2rem;
+}
