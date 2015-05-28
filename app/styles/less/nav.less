@@ -1,19 +1,23 @@
 @import 'vars';
 
 .navigation {
+
   ul {
     //style
     text-align: center;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     list-style: none;
     //layout
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-between;
+    width: 80%;
   }
   li {
-    flex: 1 1 auto;
+    flex: 0 1 auto;
+    padding: 0 1.5rem;
+    border: 1px dotted green;
   }
   a {
     display: block;
@@ -61,6 +65,7 @@
     margin: 0.2rem 0 0.2rem 1rem;
   }
 }
+
 @media screen and (min-width: 769px) {
   .navigation .active {
     background: #ddd;
