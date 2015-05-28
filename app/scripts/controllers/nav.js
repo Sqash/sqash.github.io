@@ -1,7 +1,12 @@
 'use strict';
 
 angular.module('samWhiteleyApp')
-  .controller('NavCtrl', function($scope, $location) {
+  .controller('NavCtrl', function($scope, $location, $rootScope) {
+
+    $rootScope.$on('$locationChangeSuccess', function() {
+      $scope.currPage = $scope.getCurrPage();
+      $scope.isCollapsed = true;
+    });
 
     $scope.getCurrPage = function() {
       for(var i=0, l=$scope.menu.length; i<l; i++){
@@ -9,12 +14,6 @@ angular.module('samWhiteleyApp')
           return $scope.menu[i].title;
         }
       }
-    }
-
-    $scope.navTo = function(item) {
-      $scope.currPage = item.title;
-      $scope.isCollapsed = true;
-      $location.path(item.link);
     }
 
     $scope.isActive = function(route) {

@@ -4,9 +4,6 @@ This is code for my personal homepage.
 
 ##TODO
 
-1. rework how navTo() works. Maybe watch location.path() or something to have
-   them actually have links (so they can be focused)
-
 2. Style the navbar so that the links have a definite size in horizontal and
    vertical layout.
 
