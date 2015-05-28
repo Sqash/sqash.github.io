@@ -17,7 +17,10 @@
   li {
     flex: 0 1 auto;
     padding: 0 1.5rem;
-    border: 1px dotted green;
+    width: 10rem;
+    border-radius: 2rem;
+    box-shadow: 1px 2px 4px 2px rgba(0,0,0,0.2);
+    z-index: 3;
   }
   a {
     display: block;
@@ -33,6 +36,7 @@
     ul {
       flex-flow: column nowrap;
       justify-content: flex-start;
+      align-items: center;
       li {
         margin-top: 1rem;
       }
@@ -41,12 +45,16 @@
       height: 1px;
       opacity: 0;
     }
+    .nav-content {
+      padding: 0;
+    }
   }
 }
 
 .nav-content {
   overflow: hidden;
   margin-bottom: 1rem;
+  padding: 0.8rem 0;
 }
 
 .nav-header {

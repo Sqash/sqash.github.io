@@ -4,9 +4,6 @@ This is code for my personal homepage.
 
 ##TODO
 
-2. Style the navbar so that the links have a definite size in horizontal and
-   vertical layout.
-
 3. Make mixins for standard css
     - floating content panes
 
