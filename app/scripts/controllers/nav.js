@@ -14,7 +14,7 @@ angular.module('samWhiteleyApp')
           return $scope.menu[i].title;
         }
       }
-    }
+    };
 
     $scope.isActive = function(route) {
       return route === $location.path();

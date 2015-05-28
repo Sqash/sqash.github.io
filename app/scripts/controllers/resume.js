@@ -8,5 +8,5 @@
  * Controller of the samWhiteleyApp
  */
 angular.module('samWhiteleyApp')
-  .controller('ResumeCtrl', function ($scope) {
+  .controller('ResumeCtrl', function () {
   });

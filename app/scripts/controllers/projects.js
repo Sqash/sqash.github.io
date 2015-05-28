@@ -23,7 +23,7 @@ angular.module('samWhiteleyApp')
         'I built this to be a responsive mobile design, so feel free to ' +
         'view it on any device and it should still be just as beautiful. '
       ]
-    }
+    };
 
     var artistBase = {
       title: 'artist-base',
@@ -48,7 +48,7 @@ angular.module('samWhiteleyApp')
         'cloned and used I will offer services to manage, re-develop, and ' +
         'theme personal clones of this app.'
       ]
-    }
+    };
 
     var pfsdb = {
       title: 'Pathfinder Spells Database',
@@ -64,7 +64,7 @@ angular.module('samWhiteleyApp')
         'however that will have to wait until I find an appropriate hosting ' +
         'solution. The app relies on its database in the backend.'
       ]
-    }
+    };
 
     $scope.notes = [
       {
