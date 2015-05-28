@@ -4,19 +4,19 @@ This is code for my personal homepage.
 
 ##TODO
 
-3. Make mixins for standard css
-    - floating content panes
+1. Determine/create palette
 
-4. Determine/create palette
-
-5. Define defaults for color/style
+2. Define defaults for color/style
     - h1-6 + p + small
     - a, a:LVFHT
     - background
     - pane-background
     - scroll-bar
 
-6. Animate nav and maybe certain links (project code).
+3. Make mixins for standard css
+    - floating content panes
+
+4. Animate nav and maybe certain links (project code).
 
 ## Color ideas
 

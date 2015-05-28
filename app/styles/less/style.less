@@ -2,6 +2,25 @@
 //defaults
 
 body {
+  font-family: 'Roboto Condensed', 'Open Sans Condensed', 'sans';
+  h1, h2, h3, h4 {
+    color: @sec-one-light;
+    small {
+      color: @sec-one-dark;
+    }
+  }
+  h5, h6, p {
+    color: @gray-lighter;
+    small {
+      color: @gray-light;
+    }
+  }
+  a {
+    color: @sec-two;
+    &:hover, &:focus {
+      color: @sec-two-dark;
+    }
+  }
 }
 
 .app-Content {
@@ -9,6 +28,7 @@ body {
   max-height: 100vh;
   display: flex;
   flex-direction: column;
+  background: @primary-dark;
 }
 
 //scrollbars
@@ -23,9 +43,9 @@ body {
 
 ::-webkit-scrollbar-thumb {
   width: 8px;
-  background-color: rgba(0,0,0,0.2);
-  border-radius: 4px;
-  box-shadow: 0 0 2px 2px rgba(0,0,0,0.2) inset;
+  background-color: fadeout(@primary-lighter, 80%);
+  //border-radius: 4px;
+  box-shadow: 0 0 2px 2px fadeout(@primary-light, 80%) inset;
 }
 
 //styles
@@ -35,14 +55,20 @@ body {
   flex: 0 0;
   margin-bottom: 1rem;
   h1 {
+    margin: 1.5rem 0 0.5rem 0;
     text-align: center;
+    color: @sec-one;
+    text-shadow: 0 1px 6px darken(@sec-one-darker, 40%);
   }
+
+  //colors
+  background: @primary;
+  border-bottom: @primary-darker;
 }
 
 #nav {
   width: 90%;
   margin: 0 auto;
-  border-bottom: 1px solid #ccc;
 }
 
 #main-content {
@@ -62,19 +88,20 @@ body {
 #footer {
   width: 100%;
   height: 3rem;
-  background: #FFF;
   flex: 0 0;
+  background: @primary;
+  border-top: @primary-darker;
 
   .footer {
-    border-top: 1px dashed #888;
     width: 90%;
     height: 100%;
     margin: 0 auto;
-    padding: 0 5%;
+    padding: 3px 5% 0 5%;
     text-align: center;
   }
   .glyphicon {
     font-size: 2.5rem;
+    color: @sec-two-light;
   }
 }
 
