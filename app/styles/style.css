@@ -311,3 +311,6 @@ body a:focus {
 .contact .contact-info h4 {
   text-align: left;
 }
+.contact .contact-info > p:nth-child(2)::first-line {
+  color: #ffca25;
+}
