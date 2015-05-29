@@ -63,6 +63,18 @@
     }
   }
 
+  @media screen and (min-width: 769px) {
+    .active {
+      flex: 1.5 1 auto;
+      a {
+        color: @accent;
+        &:hover, &:focus {
+          color: @accent-dark;
+        }
+      }
+    }
+  }
+
 }
 
 .navigation .nav-content.show {
@@ -95,19 +107,9 @@
       color: @accent-dark;
     }
   }
-}
 
-@media screen and (min-width: 769px) {
-  .navigation .active {
-    flex: 1.5 1 auto;
-    a {
-      color: @accent;
-      &:hover, &:focus {
-        color: @accent-dark;
-      }
-    }
-  }
-  .navigation .nav-header {
+  @media screen and (min-width: 769px) {
     display: none;
   }
 }
+

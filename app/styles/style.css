@@ -207,6 +207,18 @@ body a:focus {
     width: 100%;
   }
 }
+@media screen and (min-width: 769px) {
+  .navigation .nav-content .active {
+    flex: 1.5 1 auto;
+  }
+  .navigation .nav-content .active a {
+    color: #7ce700;
+  }
+  .navigation .nav-content .active a:hover,
+  .navigation .nav-content .active a:focus {
+    color: #66b20d;
+  }
+}
 .navigation .nav-content.show {
   height: auto;
 }
@@ -239,16 +251,6 @@ body a:focus {
   color: #66b20d;
 }
 @media screen and (min-width: 769px) {
-  .navigation .active {
-    flex: 1.5 1 auto;
-  }
-  .navigation .active a {
-    color: #7ce700;
-  }
-  .navigation .active a:hover,
-  .navigation .active a:focus {
-    color: #66b20d;
-  }
   .navigation .nav-header {
     display: none;
   }
