@@ -111,7 +111,7 @@ body a:focus {
 }
 #footer .glyphicon {
   font-size: 2.5rem;
-  color: #ffca25;
+  color: #ffc000;
 }
 .home {
   text-align: center;
@@ -150,6 +150,7 @@ body a:focus {
 }
 .navigation .nav-content {
   padding: 0.8rem 0;
+  overflow: hidden;
 }
 .navigation .nav-content ul {
   text-align: center;
@@ -184,6 +185,8 @@ body a:focus {
 }
 @media screen and (max-width: 768px) {
   .navigation .nav-content {
+    max-height: 1px;
+    transition: max-height 0.3s ease-in-out;
     margin-bottom: 0.5rem;
     padding: 0;
   }
@@ -195,22 +198,19 @@ body a:focus {
     padding: 0;
   }
   .navigation .nav-content ul li {
+    border-right: none;
     border-top: 1px dashed rgba(240, 35, 71, 0.75);
     margin-top: 0.5rem;
     padding-top: 0.5rem;
     width: 100%;
-    border: none;
   }
 }
-.navigation .nav-content.collapsed {
+.navigation .nav-content.show {
   height: auto;
-  opacity: 1;
 }
 @media screen and (max-width: 768px) {
-  .navigation .nav-content.collapsed {
-    height: 1px;
-    opacity: 0;
-    overflow: hidden;
+  .navigation .nav-content.show {
+    max-height: 300px;
   }
 }
 .navigation .nav-header {

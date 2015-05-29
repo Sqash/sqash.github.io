@@ -43,7 +43,7 @@ angular.module('samWhiteleyApp')
       }
     ];
 
-    $scope.isCollapsed = true;
+    $scope.collapsed = false;
     $scope.currPage = $scope.getCurrPage();
 
   });

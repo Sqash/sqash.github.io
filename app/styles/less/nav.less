@@ -3,6 +3,7 @@
 .navigation .nav-content {
 
   padding: 0.8rem 0;
+  overflow: hidden;
 
   ul {
     text-align: center;
@@ -39,6 +40,9 @@
   }
 
   @media screen and (max-width: 768px) {
+    max-height: 1px;
+    transition: max-height 0.3s ease-in-out;
+
     margin-bottom: 0.5rem;
     padding: 0;
     ul {
@@ -49,25 +53,22 @@
       align-items: center;
       padding: 0;
       li {
+        border-right: none;
         border-top: 1px dashed fadeout(@sec-one-light, 25%);
 
         margin-top: 0.5rem;
         padding-top: 0.5rem;
         width: 100%;
-        border: none;
       }
     }
   }
 
 }
 
-.navigation .nav-content.collapsed {
+.navigation .nav-content.show {
   height: auto;
-  opacity: 1;
   @media screen and (max-width: 768px) {
-    height: 1px;
-    opacity: 0;
-    overflow: hidden;
+    max-height: 300px;
   }
 }
 
