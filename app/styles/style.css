@@ -176,7 +176,7 @@ body a:focus {
 }
 .navigation .nav-content ul li:hover,
 .navigation .nav-content ul li:focus {
-  flex: 2 1 auto;
+  flex: 1.5 1 auto;
 }
 .navigation .nav-content ul li a {
   display: block;
