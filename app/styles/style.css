@@ -45,6 +45,19 @@ body a:hover,
 body a:focus {
   color: #c5980e;
 }
+body button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font-family: inherit;
+  font-size: 1em;
+  cursor: pointer;
+}
+body button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
 .app-Content {
   min-height: 100vh;
   max-height: 100vh;
@@ -65,7 +78,7 @@ body a:focus {
 }
 #header {
   width: 100%;
-  flex: 0 0;
+  flex: 0 0 auto;
   margin-bottom: 1rem;
   background: #272727;
   border-bottom: #000000;
@@ -85,7 +98,7 @@ body a:focus {
   margin: 1.5rem auto 1.5rem auto;
   padding: 0 1.5rem;
   overflow-y: auto;
-  flex: 1;
+  flex: 1 1 auto;
 }
 @media screen and (max-width: 1023px) {
   #main-content {
@@ -100,7 +113,7 @@ body a:focus {
 #footer {
   width: 100%;
   height: 3rem;
-  flex: 0 0;
+  flex: 0 0 auto;
   background: #272727;
   border-top: #000000;
 }
@@ -232,17 +245,19 @@ body a:focus {
   justify-content: center;
   align-items: center;
 }
-.navigation .nav-header .nav-toggle {
+.navigation .nav-header button.nav-toggle {
+  display: flex;
   background: #ffc000;
-  color: #131313;
-  border: 1px solid #997300;
+  color: #272727;
+  border: 1px solid #9b780f;
   border-radius: 15px;
-  font-size: 16px;
-  width: 30px;
   height: 30px;
+  width: 30px;
 }
-.navigation .nav-header .nav-toggle .glyphicon {
+.navigation .nav-header button.nav-toggle span {
   display: block;
+  flex: 1 0 auto;
+  font-size: 16px;
 }
 .navigation .nav-header .nav-current {
   margin: 0.2rem 0 0.2rem 1rem;

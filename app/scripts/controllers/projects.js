@@ -17,7 +17,7 @@ angular.module('samWhiteleyApp')
       tech: 'AngularJS, HTML/CSS, Bootstrap, LESS, jQuery',
       description: [
         'This project is the website you\'re looking at right here! Built ' +
-        '100% front-end. Dev-depencies are wired to host it on github.io. ' +
+        '100% front-end. Dev-dependencies are wired to host it on github.io. ' +
         'Built it as a demo of my web-design capabilities so it\'s likely ' +
         'to be updated as I try out new design patterns and tech.',
         'I built this to be a responsive mobile design, so feel free to ' +

@@ -60,8 +60,8 @@ angular.module('samWhiteleyApp')
     var volunteering = {
       title: 'I volunteer!',
       content: [
-        'There are lots of things that I do in my spare time for fun and for ' +
-        'organizations I love! Here are some of the highlights.',
+        'There are lots of things that I do in my spare time for ' +
+        'organizations I love and for fun! Here are some of the highlights.',
         'Carleton Computer Science Society (CCSS): I\'ve been an Executive ' +
         'member of the society since the \'14/\'15 school year. First go I ' +
         'was Secretary for the society and for the \'15/\'16 school year I ' +
@@ -76,7 +76,7 @@ angular.module('samWhiteleyApp')
         'a ton of fun and I love it!',
         'I\'ve also had some fun volunteering stints with Ottawa Bluesfest, ' +
         'Mister Leather Ottawa, and probably a bunch of tech and labor ' +
-        'endevours that have slipped my mind.'
+        'endeavours that have slipped my mind.'
       ]
     };
 

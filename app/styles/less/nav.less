@@ -89,16 +89,18 @@
   justify-content: center;
   align-items: center;
 
-  .nav-toggle {
+  button.nav-toggle {
+    display: flex;
     background: @sec-two;
-    color: @primary-dark;
-    border: 1px solid darken(@sec-two,20%);
+    color: @primary;
+    border: 1px solid @sec-two-darker;
     border-radius: 15px;
-    font-size: 16px;
-    width: 30px;
     height: 30px;
-    .glyphicon {
+    width: 30px;
+    span {
       display: block;
+      flex: 1 0 auto;
+      font-size: 16px;
     }
   }
   .nav-current {
