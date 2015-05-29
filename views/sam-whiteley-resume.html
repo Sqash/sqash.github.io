@@ -1,0 +1,95 @@
+<!DOCTYPE html> <html> <head> <title>Sam Whiteley - Resume</title> <style>body {
+  font-family: 'Lucida Console', Monaco, monospace;
+  font-size: 0.9em;
+  color: #111;
+  margin: 0.5em auto;
+  width: 60em;
+}
+p, h2, h3, h4, h5, h6 {
+  margin: 0.5em 0;
+}
+footer {
+  text-align: center;
+}
+header {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+header h1 {
+  float: left;
+  width: 72%;
+  text-align: center;
+  font-size: 2.5em;
+  text-shadow:1.2px 1px 1px rgba(0,179,216,1);
+}
+header address {
+  font-size: 0.8em;
+  width: 27%;
+  text-align: right;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(0, -50%);
+}
+blockquote {
+  font-size: 0.9em;
+  margin: -0.5em 2em 1.5em;
+  font-style: italic;
+}
+.outer {
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-top-left-radius: 0.35em;
+  border-bottom-left-radius: 0.35em;
+}
+div.outer {
+  margin: 1em 0 1em 6em;
+}
+.inner {
+  border-left: 1px solid rgba(0,179,216,1);
+  border-top: 1px solid rgba(0,179,216,1);
+  border-bottom: 1px solid rgba(0,179,216,1);
+  border-top-left-radius: 0.3em;
+  border-bottom-left-radius: 0.3em;
+}
+h1 div.inner {
+  padding: 10px 0px;
+}
+.heading {
+  position: relative;
+  overflow: hidden;
+  border-top: 2px solid black;
+}
+.heading .outer, .heading .inner {
+  border-top: none;
+  border-bottom: none;
+}
+.heading > h2 {
+  text-shadow:1px 1px 1px rgba(0,179,216,1);
+  margin: 0;
+  padding: 0 0.2em 0 0;
+  width: 3.2em;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.content.inner {
+  padding-left: 0.25em;
+  line-height: 1.2em;
+}
+.inner > *:first-child{
+  margin-top: 0;
+}
+.inner > *:last-child{
+  margin-bottom: 0;
+}
+ul {
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  column-count: 4;
+  -webkit-column-width: 11em;
+  -moz-column-width: 11em;
+  column-width: 11em;
+}</style>  <body> <header> <h1 class="outer"><div class="inner">Sam Whiteley</div></h1> <address> sam.whiteley@hotmail.com<br> https://github.com/sqash </address> </header> <blockquote> <p>Third year Computer Science student with a passion for concise and efficient solutions and a focus on constant improvement. With user experience at the forefront of development I strive to produce and contribute to projects that make our world a better place one piece of code at a time. </p> </blockquote> <div class="heading"> <h2>EDU</h2> <div class="outer"><div class="content inner"> <h3>Bachelors of Computer Science, Honours | Carleton University, Ottawa</h3> <p>2012 - present (expected April 2016)</p> <p>Specialization in computer networking and security</p> <p>Studies to date include object-oriented design, operating systems, networking, relational database design, functional programming, algorithm and data-structure analysis, and discrete mathematics.</p> </div></div> </div> <div class="heading"> <h2>SKILLS</h2> <div class="outer"><div class="content inner"> <h3>Languages</h3> <ul> <li>Python</li> <li>Javascript</li> <li>Java</li> <li>C/C++</li> <li>SQL</li> <li>Racket</li> <li>Prolog</li> <li>Bash</li> </ul> </div></div> <div class="outer"><div class="content inner"> <h3>Web</h3> <ul> <li>HTML</li> <li>CSS</li> <li>Node.js</li> <li>AngularJS</li> <li>Express.js</li> <li>jQuery</li> <li>Bootstrap</li> <li>MongoDB</li> </ul> </div></div> <div class="outer"><div class="content inner"> <h3>Tools</h3> <ul> <li>git</li> <li>Vim</li> <li>gcc</li> <li>g++</li> <li>valgrind</li> <li>tmux</li> <li>Eclipse</li> <li>Notepad++</li> </ul> </div></div> <div class="outer"><div class="content inner"> <h3>Operating Systems</h3> <p>Familiarity with administering Ubuntu Linux and Debian derivatives</p> <p>Development experience with Windows and Linux</p> </div></div> </div> <div class="heading"> <h2>PROJ</h2> <div class="outer"><div class="content inner"> <h3>Pathfinder Spells Database (class project)</h3> <p>For COMP3005 (Databases) at Carleton U. - 2015 Winter Term</p> <p>Created a proposal to solve a current problem with relational database design techniques. Designed and built a web application to allow players of the Pathfinder RPG system to search and browse spells used in the game.</p> <p>Used Angular.js, Express.js, SQLite, and Python.</p> <em><a href="https://github.com/sqash/pf-spells-db" target="_blank"> Github link: (https://github.com/sqash/pf-spells-db) </a></em> </div></div> <div class="outer"><div class="content inner"> <h3>Carleton University Textbook Purchasing Service (class group project)</h3> <p>For COMP3004 (Software Engineering) at Carleton U. - 2014 Fall Term</p> <p>Designed and built a prototype system to provide university staff and students a portal through which eTextbooks could be managed and purchased. Personally implemented server logic and networking code. Maintained and compiled the documentation that accompanied the prototype.</p> <p>Developed with a Scrum-like methodology using Qt and SQLite.</p> <em>Code private due to University plagiarism regulations.</em> </div></div> <div class="outer"><div class="content inner"> <h3>PieTalk, a python3 chat client (class group project)</h3> <p>For COMP3203 (Computer Networks) at Carleton U. - 2014 Fall Term</p> <p>Designed and built an IRC-like chat service with added P2P file sharing services. Personally responsible for version control, networking design, communication logic, total code integration, and production report.</p> <p>Used Python.</p> <em>Code private due to University plagiarism regulations.</em> </div></div> </div> <div class="heading"> <h2>WORK</h2> <div class="outer"><div class="content inner"> <h3>Karaoke Host - Affiliated with Dog & Pony Sound</h3> <p>2014 - present</p> <p>Managing and MCing weekly karaoke parties in bar environments and private venues to maximize crowd enjoyment, to provide a positive and inclusive atmosphere, and to inspire courage in patrons to sing what they love.</p> <p><a href="http://www.dogandponysound.com/profile_samoyed.htm" target="_blank"> Host Profile </a></p> </div></div> <div class="outer"><div class="content inner"> <h3>Metro Ontario Inc. - Deli Clerk</h3> <p>2011 - 2013</p> <p>Assisting customers with a variety of products. Supporting management roles through team leadership and administration of frozen stock orders.</p> </div></div> </div> <div class="heading"> <h2>VOL</h2> <div class="outer"><div class="content inner"> <h3>Carleton Computer Science Society</h3> <p>CCSS Secretary ('14/'15) - Coordinating meetings, ensuring quality of meeting minutes, directing emails, assisting with finances, general society communication.</p> <p>Co-organizer and event coordinator of CCSS N00b Frosh! 2013.</p> <p>General society volunteer for events, office staffing, and sales.</p> </div></div> <div class="outer"><div class="content inner"> <h3>Carleton Game Dev Club</h3> <p>Lent skills and time to the design and completion of the CGDC Arcade Cabinet. Designed and built the internal spaces for electronic components and assisted in the assembly of electronic internal components. </p> <p>Facilitated a public space for the cabinet to be available for use by students on campus.</p> </div></div> </div>  <footer> <em>References available upon request</em> </footer> 
