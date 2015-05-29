@@ -176,6 +176,19 @@ module.exports = function (grunt) {
       }
     },
 
+    postcss: {
+      options: {
+        map: true,
+        processors: [
+          require('autoprefixer-core')({browsers: 'last 1 version'}),
+          require('csswring')
+        ]
+      },
+      all: {
+        src: '<%= yeoman.app %>/styles/*.css'
+      }
+    },
+
     // Automatically inject Bower components into the app
     wiredep: {
       app: {
@@ -412,6 +425,7 @@ module.exports = function (grunt) {
     grunt.task.run([
       'clean:server',
       'less',
+      'postcss',
       'wiredep',
       'concurrent:server',
       'autoprefixer:server',
@@ -428,6 +442,7 @@ module.exports = function (grunt) {
   grunt.registerTask('test', [
     'clean:server',
     'less',
+    'postcss',
     'wiredep',
     'concurrent:test',
     'autoprefixer',
@@ -438,6 +453,7 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'clean:dist',
     'less',
+    'postcss',
     'wiredep',
     'useminPrepare',
     'concurrent:dist',

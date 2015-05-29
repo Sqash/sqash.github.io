@@ -13,7 +13,7 @@ angular.module('samWhiteleyApp')
       'In Computer Science',
       'Creativity',
       'Passion',
-      'A text editor',
+      'a text editor',
       'a lot of coffee',
       'and just one good idea',
       'are all you need to change the world.'
