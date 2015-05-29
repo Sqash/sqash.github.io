@@ -413,6 +413,18 @@ module.exports = function (grunt) {
           }
         ]
       }
+    },
+
+    buildcontrol: {
+      GitHubIO: {
+        options: {
+          dir: 'dist',
+          commit: true,
+          push: true,
+          remote: 'https://github.com/Sqash/sqash.github.io.git',
+          remoteBranch: 'master'
+        }
+      }
     }
   });
 
@@ -467,6 +479,10 @@ module.exports = function (grunt) {
     'filerev',
     'usemin',
     'htmlmin'
+  ]);
+
+  grunt.registerTask('push-dist', [
+    'buildcontrol:GitHubIO'
   ]);
 
   grunt.registerTask('default', [
