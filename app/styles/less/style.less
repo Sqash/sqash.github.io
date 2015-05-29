@@ -5,8 +5,10 @@ body {
   font-family: 'Roboto Condensed', 'Open Sans Condensed', 'sans';
   h1, h2, h3, h4 {
     color: @sec-one-light;
+    text-shadow: 0 1px 6px darken(@sec-one-darker, 40%);
     small {
       color: @sec-one-dark;
+      text-shadow: none;
     }
   }
   h5, h6, p {

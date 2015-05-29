@@ -19,12 +19,14 @@ body h2,
 body h3,
 body h4 {
   color: #f02347;
+  text-shadow: 0 1px 6px #000000;
 }
 body h1 small,
 body h2 small,
 body h3 small,
 body h4 small {
   color: #b90d2c;
+  text-shadow: none;
 }
 body h5,
 body h6,
