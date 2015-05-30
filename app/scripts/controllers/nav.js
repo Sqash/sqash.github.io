@@ -5,7 +5,7 @@ angular.module('samWhiteleyApp')
 
     $rootScope.$on('$locationChangeSuccess', function() {
       $scope.currPage = $scope.getCurrPage();
-      $scope.isCollapsed = true;
+      $scope.collapsed = false;
     });
 
     $scope.getCurrPage = function() {
