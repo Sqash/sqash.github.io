@@ -27,7 +27,7 @@ angular.module('samWhiteleyApp')
       title: 'Carleton Computer Science Society',
       email: 'sam.whiteley@ccss.carleton.ca',
       notes: [
-        'For inquiries related to my position on the Exective Board of the ' +
+        'For inquiries related to my position on the Executive Board of the ' +
         'CCSS.',
         'If your inquiry is about student academic life and/or success at ' +
         'Carleton University for Comp. Sci. students, please send an email ' +
