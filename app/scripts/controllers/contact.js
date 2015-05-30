@@ -30,11 +30,10 @@ angular.module('samWhiteleyApp')
         'For inquiries related to my position on the Exective Board of the ' +
         'CCSS.',
         'If your inquiry is about student academic life and/or success at ' +
-        'Carleton university for Comp. Sci. students, please send an email ' +
+        'Carleton University for Comp. Sci. students, please send an email ' +
         'with a concise and accurate subject line. For inquiries about ' +
         'other CCSS happenings (events, services, etc.) please check our ' +
-        'website (ccss.carleton.ca) for relevant contacts or email our ' +
-        'secretary.'
+        'website for relevant contacts or email our secretary.'
       ]
     };
 
