@@ -62,7 +62,7 @@ angular.module('samWhiteleyApp')
         'Carleton Computer Science Society (CCSS): I\'ve been an Executive ' +
         'member of the society since the \'14/\'15 school year. First go I ' +
         'was Secretary for the society and for the \'15/\'16 school year I ' +
-        'am the Academic Representitive. As part of the Executive Board of ' +
+        'am the Academic Representative. As part of the Executive Board of ' +
         'the CCSS I help provide services and events to make the University ' +
         'experience at Carleton exceptional for everyone in Comp. Sci.',
         'Carleton Game Dev Club: We built an arcade machine! You can come ' +
