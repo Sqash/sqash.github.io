@@ -4,101 +4,132 @@
 
 <head>
   <title>Sam Whiteley - Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
   font-family: 'Lucida Console', Monaco, monospace;
   font-size: 0.9em;
   color: #111;
-  margin: 0.5em auto;
-  width: 60em;
+  margin: 0 auto;
+  width: 60%;
 }
+
 p, h2, h3, h4, h5, h6 {
   margin: 0.5em 0;
 }
+
 footer {
   text-align: center;
 }
+
 header {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 header h1 {
-  float: left;
-  width: 72%;
+  -webkit-box-flex: 5;
+  -webkit-flex: 5 0 auto;
+      -ms-flex: 5 0 auto;
+          flex: 5 0 auto;
   text-align: center;
   font-size: 2.5em;
-  text-shadow:1.2px 1px 1px rgba(0,179,216,1);
+  text-shadow: 1px 1px 1px rgba(0,179,216,1);
+  border-top: 2px solid #111;
+  border-bottom: 2px solid #111;
 }
+
 header address {
   font-size: 0.8em;
-  width: 27%;
   text-align: right;
-  position: absolute;
-  top: 50%;
-  right: 0%;
-  transform: translate(0, -50%);
+  margin: 10px auto;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
+
+h1 div.inner {
+  padding: 10px 0px;
+  border-top: 1px solid rgba(0,179,216,1);
+  border-bottom: 1px solid rgba(0,179,216,1);
+}
+
 blockquote {
   font-size: 0.9em;
   margin: -0.5em 2em 1.5em;
   font-style: italic;
 }
+
 .outer {
-  border-left: 2px solid black;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
+  border-left: 2px solid #111;
   border-top-left-radius: 0.35em;
   border-bottom-left-radius: 0.35em;
 }
+
 div.outer {
-  margin: 1em 0 1em 6em;
+  margin: 1em;
 }
+
 .inner {
   border-left: 1px solid rgba(0,179,216,1);
-  border-top: 1px solid rgba(0,179,216,1);
-  border-bottom: 1px solid rgba(0,179,216,1);
   border-top-left-radius: 0.3em;
   border-bottom-left-radius: 0.3em;
 }
-h1 div.inner {
-  padding: 10px 0px;
-}
+
 .heading {
-  position: relative;
-  overflow: hidden;
-  border-top: 2px solid black;
+  border-top: 2px solid #111;
 }
-.heading .outer, .heading .inner {
-  border-top: none;
-  border-bottom: none;
-}
+
 .heading > h2 {
   text-shadow:1px 1px 1px rgba(0,179,216,1);
-  margin: 0;
-  padding: 0 0.2em 0 0;
-  width: 3.2em;
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
 }
+
 .content.inner {
   padding-left: 0.25em;
   line-height: 1.2em;
 }
-.inner > *:first-child{
-  margin-top: 0;
-}
-.inner > *:last-child{
-  margin-bottom: 0;
-}
+
 ul {
   -webkit-column-count: 4;
   -moz-column-count: 4;
   column-count: 4;
-  -webkit-column-width: 11em;
-  -moz-column-width: 11em;
-  column-width: 11em;
+  padding: 0;
+  list-style-type: none;
+}
+
+@media screen and (max-width: 1199px) {
+  body {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    width: 90%;
+    font-size: 0.6em;
+  }
+  header {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 767px) and (orientation: portrait) {
+  header h1 {
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    margin-bottom: 0;
+  }
 }
 </style>
 </head>
@@ -109,24 +140,26 @@ ul {
     <h1 class="outer"><div class="inner">Sam Whiteley</div></h1>
     <address>
       sam.whiteley@hotmail.com<br>
-      https://github.com/sqash
+      <a href="http://sqash.github.io" target="_blank">
+        http://sqash.github.io
+      </a>
     </address>
   </header>
 
   <blockquote>
-    <p>Third year Computer Science student with a passion for concise and
-    efficient solutions and a focus on constant improvement. With user
-    experience at the forefront of development I strive to produce and contribute
-    to projects that make our world a better place one piece of code at a time.
+    <p>Third year Computer Science student with a passion for efficient elegant
+    solutions and a focus on constant improvement. With user experience at the
+    forefront of development I strive to produce and contribute to projects
+    that make our world a better place one piece of code at a time.
     </p>
   </blockquote>
 
   <div class="heading">
-    <h2>EDU</h2>
+    <h2>EDUCATION</h2>
     <div class="outer"><div class="content inner">
       <h3>Bachelors of Computer Science, Honours | Carleton University, Ottawa</h3>
-      <p>2012 - present (expected April 2016)</p>
-      <p>Specialization in computer networking and security</p>
+      <em>2012 - present (expected April 2017)</em>
+      <p>Specialization in computer networking and security.</p>
       <p>Studies to date include object-oriented design, operating systems,
       networking, relational database design, functional programming, algorithm
       and data-structure analysis, and discrete mathematics.</p>
@@ -182,7 +215,7 @@ ul {
   </div>
 
   <div class="heading">
-    <h2>PROJ</h2>
+    <h2>PROJECTS</h2>
     <div class="outer"><div class="content inner">
         <h3>Pathfinder Spells Database (class project)</h3>
         <p>For COMP3005 (Databases) at Carleton U. - 2015 Winter Term</p>
@@ -219,7 +252,7 @@ ul {
   </div>
 
   <div class="heading">
-    <h2>WORK</h2>
+    <h2>EMPLOYMENT</h2>
     <div class="outer"><div class="content inner">
       <h3>Karaoke Host - Affiliated with Dog & Pony Sound</h3>
       <p>2014 - present</p>
@@ -241,7 +274,7 @@ ul {
   </div>
 
   <div class="heading">
-    <h2>VOL</h2>
+    <h2>VOLUNTEERING</h2>
     <div class="outer"><div class="content inner">
       <h3>Carleton Computer Science Society</h3>
       <p>CCSS Secretary ('14/'15) - Coordinating meetings, ensuring quality of
