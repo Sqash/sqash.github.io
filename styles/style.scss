@@ -1,5 +1,133 @@
 @import url("https://overpass-30e2.kxcdn.com/overpass.css");
+@import 'vars';
 
 body {
   font-family: Overpass, sans-serif;
+  margin: 0;
+  color: $color-primary;
+  background: $color-secondary;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+.full-panel {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+
+  .panel-section {
+    margin: 10px auto 0 auto;
+
+    h1, h2 {
+      text-align: center;
+    }
+  }
+}
+
+header {
+  text-align: center;
+  min-width: 60%;
+  position: relative;
+
+  h1 {
+    font-size: 2.6em;
+    font-weight: 600;
+    border-bottom: 1px solid $color-accent;
+    margin: 0;
+  }
+
+  p {
+    margin-top: 0;
+    padding-top: 10px;
+    border-top: 1px solid $color-accent-2;
+  }
+
+  img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    border-right: 1px solid $color-secondary;
+    height: 5em;
+  }
+}
+
+.about {
+  width: 60%;
+
+  p {
+    text-align: justify;
+  }
+}
+
+.contact {
+  h2 {
+    margin-bottom: 0;
+  }
+
+  .links {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+    width: 90vw;
+
+    li {
+      margin-top: 10px;
+      padding: 0 10px;
+      border-right: 1px solid $color-accent-2;
+      &:last-child {
+        border: 0;
+      }
+    }
+
+    a{
+      &:link, &:visited {
+        color: $color-accent;
+      }
+      &:hover, &:focus, &:active {
+        color: darken($color-accent, 20%);
+      }
+    }
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+//TODO: figure out how to make the picture correct on mobile
+@media (max-width: 436px) {
+  .about {
+    width: 90%;
+  }
+
+  header {
+    width: 90%;
+
+    img {
+      position: relative;
+      transform: none;
+      border: none;
+    }
+  }
 }
