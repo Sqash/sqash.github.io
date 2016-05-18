@@ -19,6 +19,7 @@ h1, h2, h3, h4, h5, h6, p {
 .dark {
   color: $color-dark-primary;
   background: $color-dark-secondary;
+  transition: color 1.0s linear, background-color 1.0s linear;
 }
 
 img.dark {
@@ -29,6 +30,7 @@ img.dark {
 .light {
   color: $color-primary;
   background: $color-secondary;
+  transition: color 1.0s linear, background-color 1.0s linear;
 }
 
 img.light {

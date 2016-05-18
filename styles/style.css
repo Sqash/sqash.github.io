@@ -13,7 +13,8 @@ h1, h2, h3, h4, h5, h6, p {
 
 .dark {
   color: #dddddd;
-  background: #111111; }
+  background: #111111;
+  transition: color 1.0s linear, background-color 1.0s linear; }
 
 img.dark {
   color: #111111;
@@ -21,7 +22,8 @@ img.dark {
 
 .light {
   color: #111111;
-  background: white; }
+  background: white;
+  transition: color 1.0s linear, background-color 1.0s linear; }
 
 img.light {
   color: white;
