@@ -4,8 +4,6 @@
 body {
   font-family: Overpass, sans-serif;
   margin: 0;
-  color: $color-primary;
-  background: $color-secondary;
 }
 
 ul {
@@ -16,6 +14,26 @@ ul {
 
 h1, h2, h3, h4, h5, h6, p {
   margin-top: 0;
+}
+
+.dark {
+  color: $color-dark-primary;
+  background: $color-dark-secondary;
+}
+
+img.dark {
+  color: $color-dark-secondary;
+  background: $color-dark-primary;
+}
+
+.light {
+  color: $color-primary;
+  background: $color-secondary;
+}
+
+img.light {
+  color: $color-secondary;
+  background: $color-primary;
 }
 
 .full-panel {
@@ -59,7 +77,7 @@ header {
     top: 50%;
     transform: translateY(-50%);
     left: 0;
-    border-right: 1px solid $color-secondary;
+    border-right: 1px solid;
     height: 5em;
   }
 }
