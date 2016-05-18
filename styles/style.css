@@ -1,0 +1,105 @@
+@import url("https://overpass-30e2.kxcdn.com/overpass.css");
+body {
+  font-family: Overpass, sans-serif;
+  margin: 0; }
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0; }
+
+.dark {
+  color: #dddddd;
+  background: #111111; }
+
+img.dark {
+  color: #111111;
+  background: #dddddd; }
+
+.light {
+  color: #111111;
+  background: white; }
+
+img.light {
+  color: white;
+  background: #111111; }
+
+.full-panel {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center; }
+  .full-panel .panel-section {
+    margin: 10px auto 0 auto; }
+    .full-panel .panel-section h1, .full-panel .panel-section h2 {
+      text-align: center; }
+
+header {
+  text-align: center;
+  min-width: 60%;
+  position: relative; }
+  header h1 {
+    font-size: 2.6em;
+    font-weight: 600;
+    border-bottom: 1px solid #0077dd;
+    margin: 0; }
+  header p {
+    margin-top: 0;
+    padding-top: 10px;
+    border-top: 1px solid #88aa11; }
+  header img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    border-right: 1px solid;
+    height: 5em; }
+
+.about {
+  width: 60%; }
+  .about p {
+    text-align: justify; }
+
+.contact h2 {
+  margin-bottom: 0; }
+
+.contact .links {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  width: 90vw; }
+  .contact .links li {
+    margin-top: 10px;
+    padding: 0 10px;
+    border-right: 1px solid #88aa11; }
+    .contact .links li:last-child {
+      border: 0; }
+  .contact .links a:link, .contact .links a:visited {
+    color: #0077dd; }
+  .contact .links a:hover, .contact .links a:focus, .contact .links a:active {
+    color: #004077; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0; }
+
+@media (max-width: 436px) {
+  .about {
+    width: 90%; }
+  header {
+    width: 90%; }
+    header img {
+      position: relative;
+      transform: none;
+      border: none; } }
